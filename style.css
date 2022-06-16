@@ -1,0 +1,57 @@
+.wow {
+  width: 100px;
+}
+
+.title{
+  text-align: center;
+  font-size: 40px;
+}
+
+.theBox{
+  position:absolute; right: 70px; top: 50px;
+  font-size: 20px;
+  padding: 10px 10px;
+  border: 4px solid #74992e
+  
+}
+
+.totalLeft{
+  position: absolute; right: 20px; top: 140px;
+  font-size: 20px;
+  /*background-color: #74992e;*/
+  color: black;
+  padding: 5px 5px;
+}
+
+.center{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+}
+
+.graph{
+  font-size: 20px;
+  word-wrap: break-word;
+  width: 400px;
+  padding: 30px 30px;
+}
+
+.winnerText{
+  position: absolute; left: 10px; top: 110px;
+  background-color: #04ff00
+}
+
+.computerBid{
+   position: absolute; right: 20px; top: 200px;
+       0px;
+  font-size: 20px;
+  padding: 10px 10px;
+  border: 4px solid #db5757;
+}
+
+.yourBid{
+  border: 4px solid #74992e
+}
+
+<section class = "totalLeft">
