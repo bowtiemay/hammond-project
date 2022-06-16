@@ -7,12 +7,10 @@ var testBool = false;
 var relativeProb = 0;
 var compBidNew = 0;
 
-
 //var maxineBid;
 var minaBid = 100;
 var maxineWin = false;
 console.log(maxineWin);
-
 
 function submitBid() {
   if (total != 0) {
@@ -21,22 +19,17 @@ function submitBid() {
     withinTotal(maxineBid);
 
     // createGraph(nodes, currentPos);
-  }
-  else {
+  } else {
     console.log("you have no more money to bid. You lose");
   }
-
 }
-
-
 
 function withinTotal(maxineBid) { //checks if bid is in range
   //console.log("within total running");
   if (maxineBid > total || maxineBid < 0) {
     document.getElementById("argh").innerHTML = "Sorry you don't have that much money";
     console.log("the total is " + total);
-  }
-  else {
+  } else {
     
     computerMoves();
     winner();
@@ -59,8 +52,7 @@ function winner() { //determines in maxine or mina won
       youLose();
     }
 
-  }
-  else {
+  } else {
     maxineWin = false;
     currentPos += 1; //moves position on graph to left
     createGraph(nodes, currentPos);
@@ -80,13 +72,11 @@ function youWin() {
     endGame();
     document.getElementById("theWinner").innerHTML = "MINA WON!"
 
-  }
-  else if (currentPos == 0) {
+  } else if (currentPos == 0) {
     console.log("MAXINE WON!");
     endGame();
     document.getElementById("theWinner").innerHTML = "MAXINE WON!"
-  }
-  else {
+  } else {
     console.log("nothing happening - but function working");
   }
 

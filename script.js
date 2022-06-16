@@ -89,11 +89,11 @@ createRandPoint(7, 89);
 
 function drawPoint(){
   
-   function setup(){
-   createCanvas(400, 300);
+  function setup() {
+    createCanvas(400, 300);
   }
   
-  function draw(){
+  function draw() {
     background('white');
     noStroke();
       
@@ -111,8 +111,6 @@ function drawPoint(){
     fill('lightblue')
       circle(150, 75, 150);
   }
-
-  
 }
 
 drawPoint();

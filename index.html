@@ -2,34 +2,7 @@
 <html>
 
 <head>
-  <style>
-    .button {
-  background-color: #74992e;
-  border: none;
-  color: white;
-  padding: 10px 10px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 10px 10px;
-  cursor: pointer;
-  border-radius: 10px;
-}
-    .button1:hover {
-  background-color: white; 
-  color: black; 
-  border: 2px solid #74992e;
-  
-}
 
-.button1 {
-  background-color: #74992e;
-  color: white;
-}
-  </style>
-
-  
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>replit</title>
@@ -40,81 +13,71 @@
   <script src="sketch.js"></script>
 </head>
 
-  <body>
+<body>
 
-    <div id = "all">
-  <section class = "title">
-   ⓂⒶⓀⒺ  Ⓐ  ⒷⒾⒹ
-  <script src="script.js"></script> 
-    
-  </section>
+  <div id = "all">
 
+    <section class = "title">
+    ⓂⒶⓀⒺ  Ⓐ  ⒷⒾⒹ
+    <script src="script.js"></script> 
       
+    </section>
 
-  <section class = "theBox">
-  
-    Your Bid:
-    <input type="number" id="maxineBid" min = "0" max = 100>
+    <section class = "theBox">
     
-    <div>
-    
-      <button class = "button button1" onclick="submitBid()" id="maxineBid">Submit     Bid</button></div>
-    
-    <div id = "total"> Your Total Money: $100</div>
-   
-    
-  </section>
-  
-    
-   
-
-
+      Your Bid:
+      <input type="number" id="maxineBid" min = "0" max = 100>
       
+      <div>
+      
+        <button class = "button button1" onclick="submitBid()" id="maxineBid">Submit     Bid</button>
+      
+      </div>
+      
+      <div id = "total"> Your Total Money: $100</div>
+    
+      
+    </section>
+    
     <section class = "computerBid">
-
-     
+        
       <div id = "computerBid"> Computer's Bid: -- </div>
       <div id = "computerTotal">Computer's Total Money: $100</div>
-  
+    
     </section>
-    
-  
+      
     <div class = "center" id = "whoWonTheBet"> Did You Win?</div>
+      
+    <h1>
     
-    
-
-  <h1>
-    
-
-    <div id = "MinaLeft"></div>
-     <div id = "MaxineLeft"></div>
-    
-  </h1>
+      <div id = "MinaLeft"></div>
+      <div id = "MaxineLeft"></div>
+      
+    </h1>
 
     <div class = "graph" id = "graph"><div>Objective:</div> Try to get the counter to your side of the board. At the start of the game, you will be given $100. To move, you can bid money. The computer will also bid money independently of your money status. Depending on the amount you bid, that's the probability that you will win. A higher bid increases your chances of winning the move, but you will have to ration your money to win over the entire game. 
-   <div> ------------------------------------------------------------How to Play: </div>
-   <div> 1) Make a bid </div>
-   <div> 2) Submit your bid </div>
-   <div> 3) See if you won the move </div>
+    <div> ------------------------------------------------------------How to Play: </div>
+    <div> 1) Make a bid </div>
+    <div> 2) Submit your bid </div>
+    <div> 3) See if you won the move </div>
     <div>4) Repeat </div> </div>
 
-    <section class = "winnerText">
-      <div id = "theWinner"></div>
-    </section>
-    
-  
-  
-  <div id = "argh"></div>
-
-  <h2 id = "youLost"></h2>
-  
-  <script src="functions.js"></script>
+      <section class = "winnerText">
+        <div id = "theWinner"></div>
+      </section>
       
-    </div>
-    <div id="again" style="display:none"><a href="#" onclick="location.reload()"<button>PLAY AGAIN</button></div>
+    
+    
+    <div id = "argh"></div>
+
+    <h2 id = "youLost"></h2>
+    
+    <script src="functions.js"></script>
+        
+  </div>
+    
+  <div id="again" style="display:none"><a href="#" onclick="location.reload()"<button>PLAY AGAIN</button></div>
     
   </body>
-
   
-
 </html>
